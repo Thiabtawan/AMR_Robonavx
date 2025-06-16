@@ -19,12 +19,20 @@ def generate_launch_description():
     return LaunchDescription([
         # —————————————————————————
         # robot_state_publisher (URDF → TF)
+        # เปลี่ยนเป็นแบบนี้
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
             output='screen',
-            parameters=robot_params
+            parameters=[
+                {
+                    'robot_description': robot_params[0]['robot_description'],
+                    'use_sim_time':       robot_params[0].get('use_sim_time', False),
+                    'transform_tolerance': 0.5,     # <-- เพิ่มบรรทัดนี้
+                }
+            ]
         ),
+
 
         # joint_state_publisher (publishes joint_states → wheel TFs)
         Node(
@@ -85,6 +93,7 @@ def generate_launch_description():
                 'frame_id': 'laser_frame',
                 'angle_compensate': True,
                 'scan_mode': 'Standard'
+                
             }]
         ),
         # RViz2
