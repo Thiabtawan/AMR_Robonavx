@@ -313,6 +313,9 @@ message(STATUS "Execute custom install script")
 # install(DIRECTORY "launch" "config" "description" "worlds" "DESTINATION" "share/my_bot")
 ament_cmake_symlink_install_directory("/home/senseri/ros2_ws/src/my_bot" DIRECTORY "launch" "config" "description" "worlds" "DESTINATION" "share/my_bot")
 
+# install(PROGRAMS "/home/senseri/ros2_ws/src/my_bot/encoder_to_odom.py" "DESTINATION" "lib/my_bot")
+ament_cmake_symlink_install_programs("/home/senseri/ros2_ws/src/my_bot" PROGRAMS "/home/senseri/ros2_ws/src/my_bot/encoder_to_odom.py" "DESTINATION" "lib/my_bot")
+
 # install(FILES "/home/senseri/ros2_ws/build/my_bot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_bot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/senseri/ros2_ws/src/my_bot" FILES "/home/senseri/ros2_ws/build/my_bot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_bot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 project(my_bot)
-
+find_package(rclpy REQUIRED)
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
@@ -27,4 +27,11 @@ install(DIRECTORY launch config description worlds
   DESTINATION share/${PROJECT_NAME}
 )
 
+
+ install(
+   PROGRAMS
+     ${CMAKE_CURRENT_SOURCE_DIR}/encoder_to_odom.py
+   DESTINATION lib/${PROJECT_NAME}
+)
 ament_package()
+

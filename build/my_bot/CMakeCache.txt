@@ -331,6 +331,9 @@ my_bot_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 my_bot_SOURCE_DIR:STATIC=/home/senseri/ros2_ws/src/my_bot
 
+//The directory containing a CMake configuration file for rclpy.
+rclpy_DIR:PATH=/opt/ros/humble/share/rclpy/cmake
+
 //The directory containing a CMake configuration file for xacro.
 xacro_DIR:PATH=/opt/ros/humble/share/xacro/cmake
 

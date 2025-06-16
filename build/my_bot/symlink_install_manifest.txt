@@ -1,7 +1,14 @@
+/home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/__pycache__/launch_robot.launch.cpython-310.pyc
+/home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/__pycache__/rsp.launch.cpython-310.pyc
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/camera.launch.py
+/home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/hw_full.launch.py
+/home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/launch_robot.launch.py
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/launch_sim.launch.py
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/rsp.launch.py
+/home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/test_serial.py
+/home/senseri/ros2_ws/install/my_bot/share/my_bot/config/empty.yaml
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/config/gazebo_params.yaml
+/home/senseri/ros2_ws/install/my_bot/share/my_bot/config/my_controllers.yaml
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/config/viwe_bot.rviz
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/config/viwe_bot2.rviz
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/description/camera.xacro
@@ -12,6 +19,7 @@
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/description/robot_core.xacro
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/worlds/obstacles.world
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/worlds/obstacles2.world
+/home/senseri/ros2_ws/install/my_bot/lib/my_bot/encoder_to_odom.py
 /home/senseri/ros2_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot
 /home/senseri/ros2_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh
