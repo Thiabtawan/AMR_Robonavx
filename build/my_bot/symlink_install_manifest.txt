@@ -4,6 +4,7 @@
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/hw_full.launch.py
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/launch_robot.launch.py
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/launch_sim.launch.py
+/home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/lidar.launch.py
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/rsp.launch.py
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/launch/test_serial.py
 /home/senseri/ros2_ws/install/my_bot/share/my_bot/config/empty.yaml

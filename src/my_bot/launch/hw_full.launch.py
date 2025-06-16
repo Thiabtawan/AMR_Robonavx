@@ -73,7 +73,20 @@ def generate_launch_description():
             output='screen',
             prefix='xterm -e'
         ),
-
+         #Lidar
+        Node(
+            package='rplidar_ros',
+            executable='rplidar_composition',
+            name='rplidar',
+            output='screen',
+            parameters=[{
+                'serial_port': '/dev/ttyUSB0',
+                'serial_baudrate': 115200,
+                'frame_id': 'laser_frame',
+                'angle_compensate': True,
+                'scan_mode': 'Standard'
+            }]
+        ),
         # RViz2
         Node(
             package='rviz2',
@@ -84,20 +97,6 @@ def generate_launch_description():
             arguments=['-d', rviz_config]
         ),
 
-
-         #Lidar
-        Node(
-            package='my_bot',                # แพ็กเกจของคุณ
-            executable='lidar_node',         # console script จาก lidar_node.py
-            name='lidar',
-            output='screen',
-            parameters=[{
-                'port': '/dev/ttyUSB0',
-                'baudrate': 115200,
-                'frame_id': 'laser_frame',
-                'scan_mode': 'Express'
-            }]
-        ),
 
 
     ])
