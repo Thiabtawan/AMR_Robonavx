@@ -42,7 +42,7 @@ def generate_launch_description():
             output='screen',
             emulate_tty=True,
             parameters=[{
-                'serial_port': '/dev/ttyUSB0',
+                'serial_port': '/dev/ttyUSB1',
                 'baudrate': 57600,
                 'ticks_per_rev': 1024,
                 'wheel_radius': 0.02,
@@ -83,4 +83,22 @@ def generate_launch_description():
             emulate_tty=True,
             arguments=['-d', rviz_config]
         ),
+
+
+         #Lidar
+        Node(
+            package='my_bot',                # แพ็กเกจของคุณ
+            executable='lidar_node',         # console script จาก lidar_node.py
+            name='lidar',
+            output='screen',
+            parameters=[{
+                'port': '/dev/ttyUSB0',
+                'baudrate': 115200,
+                'frame_id': 'laser_frame',
+                'scan_mode': 'Express'
+            }]
+        ),
+
+
     ])
+ 
